@@ -181,6 +181,9 @@ class SpeechRecognitionManager {
         
         // Define voice commands with their actions
         const voiceCommands = {
+            'start dictation': 'startDictation',
+            'begin dictation': 'startDictation',
+            'start recording': 'startDictation',
             'switch to patient': 'switchToPatient',
             'switch to clinician': 'switchToClinician',
             'switch to doctor': 'switchToClinician',
@@ -188,8 +191,10 @@ class SpeechRecognitionManager {
             'paragraph break': 'addParagraphBreak',
             'generate soap': 'generateSOAPNote',
             'generate soap note': 'generateSOAPNote',
+            'create soap note': 'generateSOAPNote',
             'pause recording': 'pauseRecording',
             'stop recording': 'stopRecording',
+            'end recording': 'stopRecording',
             'clear note': 'clearSOAPNote'
         };
         
